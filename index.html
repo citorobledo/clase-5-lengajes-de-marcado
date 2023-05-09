@@ -1,5 +1,7 @@
     
     <!--  
+
+    -     TAREA SEMANA 5
     -Dentro del body, aplicar los tags semánticos de la clase 5 para diferenciar cada parte de la página. 
       También se deben utilizar los tags "div" y "span".
     -Por lo menos un video y un audio 
@@ -11,6 +13,23 @@
     -La Web principal debe tener un formulario donde se apliquen diferentes inputs y tags 
       vistos en la clase 5 para formularios.
     -->
+    <!--
+      
+    -     TAREA SEMANA 7
+      tomen el código  (Web de noticias) y le apliquen CSS. Pueden ajustar el HTML que ya tienen creado, agregando noticias, mejorando el código, etc.
+      La idea es que apliquen los estilos CSS vistos hasta el momento para que la web se vea prolija y agradable. 
+      Es imprescindible que se lea correctamente y tenga un estilo limpio y ordenado. 
+      Deben crear un archivo CSS y vincularlo con el HTML.
+      Deberán aplicar:
+      - Por lo menos 3 ejemplos de SPAN donde apliquen diferentes estilos de texto en cada uno.
+      - Buscar en esta Web una fuente e incorporarla en alguna parte de la página (les recomendamos que usen: https://fonts.google.com/) 
+      [Si no saben cómo aplicarlo, les recomendamos que intenten resolverlo investigando, si no logran hacerlo, 
+      pueden debatir por Discord cómo hacerlo.]
+      - Deben aplicar en algún lado cada una de las unidades de medida que vimos en la clase (no olvidar vh y vw) y deben probar 
+      cambiar el tamaño de la ventana para ver como responden los tamaños de los textos.
+      - Armar por lo menos una lista y aplicar una imagen en cada ítem como lo hicimos en el ejemplo de la clase. Deben buscar una imagen 
+      o crearla para que se relacione correctamente con el contenido, no coloquen cualquier imagen.
+    -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -18,13 +37,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link  rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  
   <title>Web de noticias</title>
 </head>
 <body>
   <header>
-    <center>
+    
+      <img id="logo" src= "src/transparent-trumpet.png" alt="logo de la web">
       <h1 id = "inicio">Web de noticias Trompete</h1>
-    </center>
+    
     <hr>
     
     <nav>
@@ -41,7 +67,7 @@
     <div id="dolar">
     <h1>Dólar blue hoy: <span>a cuánto cerró</span> este martes 25 de abril de 2023 </h1> 
     <p>Mirá a cuánto cerraron el dólar blue, el dólar MEP, el dólar tarjeta, el dólar CCL, y el dólar turista en Argentina.</p>
-    <img src = "https://media.ambito.com/p/486d807308cf6d71b75f36b226b8cf9a/adjuntos/239/imagenes/040/343/0040343448/655x368/smart/dolar-dolar-blue-mercados-vivo-finanzas-inversionesjpg.jpg" alt = "dolar blue" width="700" height="450">
+    <img src = "https://media.ambito.com/p/486d807308cf6d71b75f36b226b8cf9a/adjuntos/239/imagenes/040/343/0040343448/655x368/smart/dolar-dolar-blue-mercados-vivo-finanzas-inversionesjpg.jpg" alt = "dolar blue" >
     <article>
       <blockquote> 
         <p>
@@ -75,14 +101,14 @@
         <td>$285</td>
         <td>$350</td>
         <td>$65</td>
-        <td>2</td>
+        <td>02</td>
         <td>2022</td>
       </tr>
       <tr>
         <td>$310</td>
         <td>$550</td>
         <td>$240</td>
-        <td>1</td>
+        <td>01</td>
         <td>2023</td>
       </tr>
       </tbody>
@@ -96,7 +122,7 @@
   </div>
     <div id="milei">
     <h1>Javier Milei quiere terminar con la educación primaria y secundaria obligatoria</h1> 
-    <img src = "https://images.pagina12.com.ar/styles/focal_3_2_960x640/public/2023-04/718802-mileii_0.jpeg?h=9a9f8d88&itok=oIIup7LE" alt = "Javier Milei" width="700" height="450">
+    <img src = "https://images.pagina12.com.ar/styles/focal_3_2_960x640/public/2023-04/718802-mileii_0.jpeg?h=9a9f8d88&itok=oIIup7LE" alt = "Javier Milei">
     <p>El candidato de Libertad Avanza citó a Macri y dijo que <span>"si  querés estudiar y no tenés plata, 
       vas a una escuela pública".</span> Esa propuesta, que ejecutó Pinochet durante la dictadura, amplió la brecha 
       de calidad entre las escuelas privadas y las estatales en Chile.

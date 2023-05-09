@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');*/
+
+
+body {
+    background-color:#fff;
+    background-clip: content-box;
+    font-family:   'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 2px;
+}
+
+h1 {
+    color: rgb(123, 9, 9);
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    
+
+   
+}
+
+p {
+  font-style: italic;
+  font-size: 1.1rem;
+  
+}
+span {
+    font-style: italic;
+    font-weight: bold;
+}
+/*list-style-image: url(/src/transparent-trumpet.png);*/
+#logo {
+  
+  width: 4rem;
+  height: 3rem;
+  margin: auto;
+
+  }
+
+#logo:hover {
+  width: 4.5rem;
+  height: 3.5rem;
+  margin: auto;
+  transition: 0.5s;
+  }
+
+  img {
+    width: 700px;
+    height: 450px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
