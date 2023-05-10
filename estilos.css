@@ -20,9 +20,11 @@ p {
   
 }
 span {
-    font-style: italic;
-    font-weight: bold;
+  font-style: italic;
+  font-family: Arial ;
+  font-weight: bold;
 }
+
 /*list-style-image: url(/src/transparent-trumpet.png);*/
 
 #logo {
@@ -42,8 +44,8 @@ span {
   }
 
   img {
-    width: 700px;
-    height: 450px;
+    width: 100%;
+    max-width: 60vw;
     border-radius: 10px;
     transition: 0.5s;
     object-fit: cover;
@@ -64,6 +66,7 @@ span {
   .jo:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    
   }
 
   img:hover {
@@ -72,7 +75,7 @@ span {
 .cont{
   justify-content: center;
   display: flex;
-  max-width: 700px;
+  max-width: 60vw;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -86,4 +89,10 @@ span {
   margin: 0 auto;
   padding: 10px;
 }
+
+#icono {
+  list-style-image: url(/src/noticias.png);
+  
+}
+
 
