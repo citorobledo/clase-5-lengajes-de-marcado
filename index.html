@@ -1,5 +1,4 @@
-    
-    <!--  
+<!--  
 
     -     TAREA SEMANA 5
     -Dentro del body, aplicar los tags semánticos de la clase 5 para diferenciar cada parte de la página. 
@@ -13,7 +12,7 @@
     -La Web principal debe tener un formulario donde se apliquen diferentes inputs y tags 
       vistos en la clase 5 para formularios.
     -->
-    <!--
+<!--
       
     -     TAREA SEMANA 7
       tomen el código  (Web de noticias) y le apliquen CSS. Pueden ajustar el HTML que ya tienen creado, agregando noticias, mejorando el código, etc.
@@ -33,123 +32,148 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link  rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilos.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-  
+
   <title>Web de noticias</title>
 </head>
+
 <body>
   <header>
-    
-      <img id="logo" src= "src/transparent-trumpet.png" alt="logo de la web">
-      <h1 id = "inicio">Web de noticias Trompete</h1>
-    
+
+    <div class="jo">
+      <img id="logo" src="src/transparent-trumpet.png" alt="logo de la web">
+      <h1 id="inicio">Web de noticias Trompete</h1>
+    </div>
+
     <hr>
-    
     <nav>
       <ul>
         <li><a href="index.html" target="_self">Inicio</a></li>
-        <li><a href="noticia1.html" target = "_blank" >Noticia espectaculo</a></li>
-        <li><a href=#dolar >Noticia financiera</a></li>
-        <li><a href=#milei >Noticia politica</a></li>
+        <li><a href="noticia1.html" target="_blank">Noticia espectaculo</a></li>
+        <li><a href=#dolar>Noticia financiera</a></li>
+        <li><a href=#milei>Noticia politica</a></li>
         <li><a href=#comentario>Dejanos tu Comentario</a></li>
       </ul>
     </nav>
   </header>
   <div id="noticias">
+
+
     <div id="dolar">
-    <h1>Dólar blue hoy: <span>a cuánto cerró</span> este martes 25 de abril de 2023 </h1> 
-    <p>Mirá a cuánto cerraron el dólar blue, el dólar MEP, el dólar tarjeta, el dólar CCL, y el dólar turista en Argentina.</p>
-    <img src = "https://media.ambito.com/p/486d807308cf6d71b75f36b226b8cf9a/adjuntos/239/imagenes/040/343/0040343448/655x368/smart/dolar-dolar-blue-mercados-vivo-finanzas-inversionesjpg.jpg" alt = "dolar blue" >
-    <article>
-      <blockquote> 
-        <p>
-        En otra jornada de fuerte tensión cambiaria e incertidumbre financiera, el 
-        <a href="https://www.ambito.com/contenidos/dolar.html" target="_blank" rel="follow noopener">
-          dólar blue
-        </a> aceleró su escalada este martes 25 de abril y superó por primera vez los $490, tras rozar los $500,
+      <h1>Dólar blue hoy: <span>a cuánto cerró</span> este martes 25 de abril de 2023 </h1>
+      <p>Mirá a cuánto cerraron el dólar blue, el dólar MEP, el dólar tarjeta, el dólar CCL, y el dólar turista en
+        Argentina.</p>
+        <div class="cont">
+          <img
+        src="https://media.ambito.com/p/486d807308cf6d71b75f36b226b8cf9a/adjuntos/239/imagenes/040/343/0040343448/655x368/smart/dolar-dolar-blue-mercados-vivo-finanzas-inversionesjpg.jpg"
+        alt="dolar blue">
+        </div>
+      
+      <article>
+        <blockquote>
+          <p>
+            En otra jornada de fuerte tensión cambiaria e incertidumbre financiera, el
+            <a href="https://www.ambito.com/contenidos/dolar.html" target="_blank" rel="follow noopener">
+              dólar blue</a>
+            aceleró su escalada este martes 25 de abril y superó por primera vez los $490, tras rozar los $500,
             algo que obligó al ministro de Economía, Sergio Massa, a salir a anunciar la intervención del Gobierno
             en el mercado del dólar en la Bolsa.
-        </p>
-      </blockquote>
-    </article>
-    <table border="1"> <!-- Dentro de la etiqueta table se incluye una tabla -->
-      <thead> <!-- Dentro de la etiqueta thead se incluye el encabezado de la tabla -->
-      <tr> <!-- Dentro de la etiqueta tr se incluye una fila de la tabla -->
-        <th>Oficial</th> <!-- Dentro de la etiqueta th se incluye un encabezado de columna -->
-        <th>Blue</th>
-        <th>Brecha</th>
-        <th colspan="2">Periodo</th> <!-- colspan sirve para unir columnas, rowspan sirve para unir filas -->
-      </tr>
+          </p>
+        </blockquote>
+      </article>
+    </div>
+
+    <table border="1">
+      <!-- Dentro de la etiqueta table se incluye una tabla -->
+      <thead>
+        <!-- Dentro de la etiqueta thead se incluye el encabezado de la tabla -->
+        <tr>
+          <!-- Dentro de la etiqueta tr se incluye una fila de la tabla -->
+          <th>Oficial</th> <!-- Dentro de la etiqueta th se incluye un encabezado de columna -->
+          <th>Blue</th>
+          <th>Brecha</th>
+          <th colspan="2">Periodo</th> <!-- colspan sirve para unir columnas, rowspan sirve para unir filas -->
+        </tr>
       </thead>
-      <tbody> <!-- Dentro de la etiqueta tbody se incluye el cuerpo de la tabla -->
-      <tr>
-        <td>$270</td> <!-- Dentro de la etiqueta td se incluye una celda de la tabla -->
-        <td>$320</td>
-        <td>$50</td>
-        <td>01</td>
-        <td>2022</td>
-      </tr>
-      <tr>
-        <td>$285</td>
-        <td>$350</td>
-        <td>$65</td>
-        <td>02</td>
-        <td>2022</td>
-      </tr>
-      <tr>
-        <td>$310</td>
-        <td>$550</td>
-        <td>$240</td>
-        <td>01</td>
-        <td>2023</td>
-      </tr>
+      <tbody>
+        <!-- Dentro de la etiqueta tbody se incluye el cuerpo de la tabla -->
+        <tr>
+          <td>$270</td> <!-- Dentro de la etiqueta td se incluye una celda de la tabla -->
+          <td>$320</td>
+          <td>$50</td>
+          <td>01</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>$285</td>
+          <td>$350</td>
+          <td>$65</td>
+          <td>02</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>$310</td>
+          <td>$550</td>
+          <td>$240</td>
+          <td>01</td>
+          <td>2023</td>
+        </tr>
       </tbody>
-      <tfooter> <!-- Dentro de la etiqueta tfooter se incluye el pie de la tabla -->
-          <tr>
-              <td colspan="5">Proyeccion de cotizacion</td> <!-- Dentro de la etiqueta tfooter se incluye el pie de la tabla -->
-          </tr>
+      <tfooter>
+        <!-- Dentro de la etiqueta tfooter se incluye el pie de la tabla -->
+        <tr>
+          <td colspan="5">Proyeccion de cotizacion</td>
+          <!-- Dentro de la etiqueta tfooter se incluye el pie de la tabla -->
+        </tr>
       </tfooter>
-    </table> 
-    
+    </table>
+
+
   </div>
-    <div id="milei">
-    <h1>Javier Milei quiere terminar con la educación primaria y secundaria obligatoria</h1> 
-    <img src = "https://images.pagina12.com.ar/styles/focal_3_2_960x640/public/2023-04/718802-mileii_0.jpeg?h=9a9f8d88&itok=oIIup7LE" alt = "Javier Milei">
-    <p>El candidato de Libertad Avanza citó a Macri y dijo que <span>"si  querés estudiar y no tenés plata, 
-      vas a una escuela pública".</span> Esa propuesta, que ejecutó Pinochet durante la dictadura, amplió la brecha 
+  <div id="milei">
+    <h1>Javier Milei quiere terminar con la educación primaria y secundaria obligatoria</h1>
+    <div class="cont">
+      <img
+      src="https://images.pagina12.com.ar/styles/focal_3_2_960x640/public/2023-04/718802-mileii_0.jpeg?h=9a9f8d88&itok=oIIup7LE"
+      alt="Javier Milei">
+    </div>
+    
+    <p>El candidato de Libertad Avanza citó a Macri y dijo que <span>"si querés estudiar y no tenés plata,
+        vas a una escuela pública".</span> Esa propuesta, que ejecutó Pinochet durante la dictadura, amplió la brecha
       de calidad entre las escuelas privadas y las estatales en Chile.
     </p>
-    </div>
+  </div>
   </div>
   <h3>Dejanos aca tu comentario:</h3>
   <div>
-      <textarea name="textarea" rows="10" cols="50"  placeholder="escribí un comentario acá"></textarea>
+    <textarea name="textarea" rows="10" cols="50" placeholder="escribí un comentario acá"></textarea>
   </div>
-  <form id = "comentario">
+  <form id="comentario">
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" >
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
     <br>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder=" Email" >
+    <input type="email" id="email" name="email" placeholder=" Email">
     <br>
     <input type="submit" value="Enviar comentario">
   </form>
 
-  
+
   <footer>
     <hr>
     <h3>Accesos Rapidos</h3>
     <ul>
       <li>
-        <a href= #inicio>Ir arriba</a>
+        <a href=#inicio>Ir arriba</a>
       </li>
       <li>
         <a href="https://instagram.com">instagram</a>
@@ -165,6 +189,7 @@
       <p>Web de noticias Trompete ®</p>
     </center>
   </footer>
-  
+
 </body>
+
 </html>
